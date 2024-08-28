@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Atividade LAB02</title>
+</head>
+<body>
+    <h1>exemplo 1</h1>
+    <h2>exemplo 2</h2>
+    <h3>exemplo 3</h3>
+    <h4>exemplo 4</h4>
+    <h5>exemplo 5</h5>
+    <h6>exemplo 6</h6>
+    <p>este paragráfo é um exemplo</p>
+    <p>outro exemplo</p>
+    <h1>Lista não ordenada</h1>
+    <ul>
+        <li>coca</li>
+        <li>feijão</li>
+        <li>peixe</li>
+    </ul>
+    <h1>Lista ordenada</h1>
+    <ol>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ol>
+    <form action="#" method="post">  
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <label for="fruta">Fruta favorita:</label>
+        <select id="fruta" name="fruta" required>
+            <option value="maca">Maçã</option>
+            <option value="banana">Banana</option>
+            <option value="laranja">Laranja</option>
+        </select>
+        <label for="comentarios">Comentários adicionais:</label>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
+        <input type="submit" value="Enviar">
+    </form>
+    <h1>canvas</h1>
+    <canvas id="canvas" width="400" height="200">
+        Seu navegador não suporta  canvas.
+    </canvas>
+    <script>
+        var canvas = document.getElementById('meuCanvas');
+        var ctx = canvas.getContext('2d');
+        ctx.fillStyle = '#FF5733'; 
+        ctx.fillRect(50, 50, 300, 100); 
+    </script>
+    <script>
+        var canvas = document.getElementById('canvas');
+        var ctx = canvas.getContext('2d');
+        ctx.fillStyle = '#FF5733'; 
+        ctx.fillRect(50, 50, 300, 100);
+    </script>
+    <h1>SVG</h1>
+    <svg width="400" height="200" style="border:1px solid #000000;">
+        <circle cx="200" cy="100" r="80" fill="skyblue" stroke="black" stroke-width="3"/>
+    </svg>
+    <h1>video></video></h1>
+    <iframe width="640" height="360" src="https://www.youtube.com/embed/pEn8dOtOLqg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
